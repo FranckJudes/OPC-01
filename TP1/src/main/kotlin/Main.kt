@@ -1,5 +1,6 @@
 import java.util.*
 
+// class client
 data class Client(val nom: String, val numeroCompteur: Int, var consommation: Double)
 
 // Fonction pour récupérer les clients via l'entrée utilisateur
@@ -46,6 +47,7 @@ fun verifierConsommationAvance(client: Client) {
     }
 }
 
+// Calcule moyenne de tout les etudiants
 fun List<Double>.moyenneConsommation(): Double {
     var final : Double = 0.0;
     if (this.isEmpty()) {
